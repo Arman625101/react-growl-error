@@ -1,11 +1,28 @@
 import React, { Component } from 'react';
-import Growl from '../../components/Growl/Growl';
+import { hot } from 'react-hot-loader';
+import Growl from '../../components/Growl';
 
-const Root = () => (
-  <div>
-    <h1>Demo</h1>
-    <Growl>Growl success</Growl>
-  </div>
-);
+class Root extends Component {
+  constructor() {
+    super();
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-export default Root;
+  handleClick() {
+    Growl.success('a');
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Demo</h1>
+        <button type="button" onClick={this.handleClick}>
+          Click me
+        </button>
+        {/* <Growl>Growl success</Growl> */}
+      </div>
+    );
+  }
+}
+
+export default hot(module)(Root);
