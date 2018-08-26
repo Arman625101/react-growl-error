@@ -4,6 +4,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 /* eslint-enable */
 const PATHS = require('./PATHS');
 
+exports.setEntry = path => ({
+  entry: path,
+});
+
 exports.setMode = mode => ({
   mode,
 });

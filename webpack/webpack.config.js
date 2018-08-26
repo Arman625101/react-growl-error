@@ -17,7 +17,7 @@ const cleanOptions = {
 };
 
 const common = {
-  entry: PATHS.APP,
+  // entry: PATHS.APP,
   output: {
     path: PATHS.DIST,
     filename: 'app.bundle.[hash].js',

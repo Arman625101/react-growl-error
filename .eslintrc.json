@@ -12,6 +12,7 @@
     "class-methods-use-this": "off",
     "react/no-array-index-key": "off",
     "react/destructuring-assignment": "off",
-    "max-len": ["error", { "code": 80 }]
+    "max-len": ["error", { "code": 80 }],
+    "no-plusplus": "off"
   }
 }

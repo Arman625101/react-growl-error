@@ -4,6 +4,7 @@ const parts = require('./webpack.parts');
 require('dotenv').config();
 
 const production = merge(
+  parts.setEntry(PATHS.APP),
   {
     plugins: [parts.extractSass],
   },

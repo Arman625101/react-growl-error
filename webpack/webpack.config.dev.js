@@ -4,6 +4,7 @@ const parts = require('./webpack.parts');
 require('dotenv').config();
 
 const development = merge(
+  parts.setEntry(PATHS.DEMO),
   {
     devServer: {
       contentBase: PATHS.DIST,
