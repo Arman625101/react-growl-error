@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import Growl from '../../components/Growl';
 
 class Root extends Component {
   constructor() {
@@ -9,7 +8,7 @@ class Root extends Component {
   }
 
   handleClick() {
-    Growl.success('a');
+    console.log('A');
   }
 
   render() {
@@ -19,7 +18,6 @@ class Root extends Component {
         <button type="button" onClick={this.handleClick}>
           Click me
         </button>
-        {/* <Growl>Growl success</Growl> */}
       </div>
     );
   }

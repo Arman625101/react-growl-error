@@ -1,0 +1,51 @@
+{
+  "name": "reactjs-growl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Arman625101/reactjs-growl.git",
+  "author": "<vip.arman2011@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --config webpack/webpack.config.js --hot",
+    "build": "webpack --config webpack/webpack.config.js",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.1.1",
+    "babel": "6.23.0",
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.3",
+    "babel-eslint": "8.2.6",
+    "babel-loader": "7.1.5",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "clean-webpack-plugin": "0.1.19",
+    "css-loader": "1.0.0",
+    "eslint": "5.4.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.1",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "file-loader": "1.1.11",
+    "gh-pages": "1.2.0",
+    "html-webpack-plugin": "3.2.0",
+    "node-sass": "4.9.3",
+    "postcss-loader": "3.0.0",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.22.1",
+    "url-loader": "1.1.1",
+    "webpack": "4.16.5",
+    "webpack-cli": "3.1.0",
+    "webpack-dev-server": "3.1.5",
+    "webpack-merge": "4.1.4"
+  },
+  "dependencies": {
+    "dotenv": "6.0.0",
+    "prop-types": "15.6.2",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
+    "react-hot-loader": "4.3.4",
+    "react-icons": "^3.0.5"
+  }
+}
