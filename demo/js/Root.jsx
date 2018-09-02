@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
+import growl from '../../src/growl';
 
 class Root extends Component {
   constructor() {
@@ -7,9 +8,7 @@ class Root extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    console.log('A');
-  }
+  handleClick() {}
 
   render() {
     return (
